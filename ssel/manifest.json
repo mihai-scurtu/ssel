@@ -1,0 +1,23 @@
+{
+	// Required
+	"manifest_version": 2,
+	"name": "SSEL",
+	"version": "0.1",
+
+	"description": "Compile LESS code from a page's stylesheets. Useful for porting old code.",
+
+	"browser_action": {
+		"default_title": "SSEL",
+		"default_popup": "popup.html"
+	},
+
+	"background": {
+		scripts: ["background.js"]
+	},
+
+	"permissions": [
+		"http://*/*",
+		"https://*/*",
+		"activeTab"
+	]
+}
