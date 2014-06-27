@@ -9,9 +9,30 @@ h1 {
 	width: 700px;
 }
 
+#stylesheets {
+	padding: 0;
+}
+
+#stylesheets li {
+	list-style-type: none;
+
+}
+
+.sheet-title a {
+	float: right;
+}
+
 .sheet-content { 
 	max-height: 300px;
 	overflow: auto;
 }
 
+.btn {
+	padding: 5px;
+}
+
+.hidden {
+	display: none;
+	visibility: none;
+}
 
