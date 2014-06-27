@@ -11,6 +11,13 @@
 		"default_popup": "popup.html"
 	},
 
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["jquery.js"]
+		}
+	],
+
 	"permissions": [
 		"http://*/*",
 		"https://*/*",
