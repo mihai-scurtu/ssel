@@ -28,7 +28,7 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
 
 			var content = $(document.createElement('div'))
 				.addClass('sheet-content')
-				.html(stylesheets[i].content.replace(/\n+/g, '<br>'))
+				.html(stylesheets[i].content.replace(/\n+/g, '<br>').replace(/(\t| +)g/, ''))
 				.hide();
 			$('#stylesheets').append(li.append(title).append(content));
 		}
